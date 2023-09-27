@@ -1,0 +1,5 @@
+/* Los contenedores de todas las páginas tienen un ancho máximo de 1200px */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

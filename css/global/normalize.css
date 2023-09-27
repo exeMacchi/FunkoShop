@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-base);
+    color: var(--dark-solid);
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    font-size: 2rem;
+}
+
+header,
+footer {
+    font-family: var(--font-alternative);
+    color: var(--font-light-solid);
+    background-color: var(--bg-dark-solid);
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+

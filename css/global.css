@@ -1,0 +1,16 @@
+/* Respetar el orden para garantizar la funcionalidad de las variables */
+
+/* Fuentes externas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Raleway:wght@100;300;400;500;600;700&display=swap');
+
+/* Variables */
+@import url(global/variables.css);
+
+/* Normalización */
+@import url(global/normalize.css);
+
+/* Estilos del header y footer */
+@import url(global/header_footer.css);
+
+/* Estilos generales reutilizables en todas las páginas */
+@import url(global/general_styles.css);
