@@ -1,0 +1,76 @@
+/* -------------------------------- HEADER ---------------------------------- */
+/* --- HEADER --- */
+header {
+    padding: var(--spacing-24) var(--spacing-36);
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo {
+    max-width: 370px;
+}
+
+/* Menú para las páginas shop */
+.navbar__menu-shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-36);
+}
+
+/* Submenú para las páginas shop */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-dark-solid);
+    width: 20rem;
+}
+
+.with-submenu {
+    position: relative;
+}
+
+.with-submenu:hover .submenu {
+    display: block;
+}
+
+/* .submenu__item {} */
+
+.submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: var(--transition-links);
+}
+
+.submenu__link:hover {
+    background-color: var(--primary-900);
+}
+
+/* Menú para las páginas admin */
+.navbar__menu-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-68);
+}
+
+/* .navbar__item {} */
+
+.navbar__link {
+    display: inline-block;
+    font-size: var(--font-medium-20);
+    padding: var(--spacing-8) var(--spacing-16);
+    transition: var(--transition-links);
+}
+
+.navbar__link:hover {
+    background-color: var(--primary-900);
+}
+
+/* .navbar__cart {} */

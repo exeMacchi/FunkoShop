@@ -49,5 +49,5 @@
     --spacing-8: 0.8rem;
 
     /* Transitions */
-    --transition-links: all .3s ease-in-out;
+    --transition-links: background-color .3s ease-in-out;
 }

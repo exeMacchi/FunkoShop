@@ -4,51 +4,59 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FunkoShop</title>
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/stylePages/index.css">
     </head>
     <body>
         <header> <!-- INICIO HEADER -->
-            <nav>
-                <figure>
+            <nav class="navbar container">
+                <figure class="navbar__logo">
                     <a href="./index.html">
                         <img src="img/branding/logo_light_horizontal.svg" 
                              alt="FunkoShop Logo">
                     </a>
                 </figure>
 
-                <ul> <!-- MENU -->
-                    <li>
-                        <a href="./pages/shop/shop.html">SHOP</a>
-                        <!-- SUBMENU -->
-                        <!-- <ul> 
-                            <li>
-                                <a href="/pages/shop/funkos.html">FUNKOS</a>
+                <ul class="navbar__menu-shop"> <!-- MENU -->
+                    <li class="navbar__item with-submenu">
+                        <a class="navbar__link with-icon" href="#">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                        <ul class="submenu">  <!-- SUBMENU -->
+                            <li class="submenu__item">
+                                <a class="submenu__link"
+                                   href="#">FUNKOS</a>
                             </li>
-                            <li>
-                                <a class="navbar__link" href="/pages/shop/remeras.html">REMERAS</a>
+                            <li class="submenu__item">
+                                <a class="submenu__link" 
+                                   href="#">REMERAS</a>
                             </li>
-                            <li>
-                                <a class="navbar__link" href="/pages/shop/llaveros.html">LLAVEROS</a>
+                            <li class="submenu__item">
+                                <a class="submenu__link" 
+                                   href="#">LLAVEROS</a>
                             </li>
-                        </ul> -->
+                        </ul> <!-- FIN SUBMENU -->
                     </li>
-                    <li>
-                        <a href="/pages/admin/login.html">LOGIN</a>
+
+                    <li class="navbar__item">
+                        <a class="navbar__link" 
+                           href="/pages/admin/login.html">LOGIN</a>
                     </li>
-                    <li>
-                        <a href="/pages/contact.html">CONTACTO</a>
+
+                    <li class="navbar__item">
+                        <a class="navbar__link"
+                           href="/pages/contact.html">CONTACTO</a>
                     </li>
-                    <li>
-                        <a href="/pages/shop/cart.html">
+
+                    <li class="navbar__item">
+                        <a class="navbar__cart"
+                           href="/pages/shop/cart.html">
                             <img src="/img/icons/cart-icon.svg" 
                                  alt="Carrito de compras">
                         </a>
                     </li>
-                </ul>
+                </ul> <!-- FIN MENU -->
             </nav>
         </header> <!-- FIN HEADER -->
 
-        <main> <!-- INICIO MAIN -->
+        <main class="container"> <!-- INICIO MAIN -->
             <section> <!-- HERO-->
                 <article>
                     <h2>Nuevos Ingresos</h2>
@@ -148,7 +156,7 @@
         </main> <!-- FIN MAIN -->
 
         <footer> <!-- INICIO FOOTER -->
-            <nav>
+            <nav class="container">
                 <ul>
                     <li><a href="../shop/shop.html">SHOP</a></li>
                     <li><a href="./register.html">REGISTRARSE</a></li>
@@ -163,7 +171,10 @@
                     </a>
                 </figure>
             </nav>
-            <p>All rights reserved 2023 - Funkoshop&copy;</p>
+            <p class="container">All rights reserved 2023 - Funkoshop&copy;</p>
         </footer> <!-- FIN FOOTER -->
+    
+        <!-- Scripts -->
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     </body>
 </html>
