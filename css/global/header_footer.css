@@ -29,6 +29,7 @@ header {
     position: absolute;
     background-color: var(--bg-dark-solid);
     width: 20rem;
+    z-index: 10;
 }
 
 .with-submenu {
