@@ -15,8 +15,16 @@ header {
     max-width: 370px;
 }
 
+/* Menú para las páginas admin */
+.navbar__menu--admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-68);
+}
+
 /* Menú para las páginas shop */
-.navbar__menu-shop {
+.navbar__menu--shop {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,13 +61,6 @@ header {
     background-color: var(--primary-900);
 }
 
-/* Menú para las páginas admin */
-.navbar__menu-admin {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--spacing-68);
-}
 
 /* .navbar__item {} */
 
