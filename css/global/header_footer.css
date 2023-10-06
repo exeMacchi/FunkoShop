@@ -1,6 +1,14 @@
+/* --- ESTILOS GENERALES --- */
+header,
+footer {
+    font-family: var(--font-alternative);
+    color: var(--font-light-solid);
+    background-color: var(--bg-dark-solid);
+}
+
 /* --- HEADER --- */
 header {
-    padding: var(--spacing-24) var(--spacing-36);
+    padding: var(--spacing-36) var(--spacing-100);
 }
 
 /* --- NAVBAR --- */
@@ -70,6 +78,7 @@ header {
 .navbar__link {
     display: inline-block;
     font-size: var(--font-medium-20);
+    font-weight: 500;
     padding: var(--spacing-8) var(--spacing-16);
     transition: var(--transition-links);
 }
@@ -82,7 +91,7 @@ header {
 
 /* --- FOOTER -- */
 footer {
-    padding: var(--spacing-68) var(--spacing-24) var(--spacing-16) var(--spacing-24);
+    padding: var(--spacing-100) var(--spacing-100) var(--spacing-16) var(--spacing-100);
 }
 
 .footer__copy {

@@ -20,6 +20,7 @@
     --bg-dark-solid: #30343F;
     --bg-light-solid: #FAFAFF;
     --font-light-solid: #FFFFFF;
+    --font-light-placeholder: #B9B9B9;
 
     /* Tipografias */
     --font-base: 'Inter', sans-serif;
@@ -27,7 +28,9 @@
 
     /* Font-sizes */
     --font-display: 4.6rem;
+    --font-xjumbo: 4.2rem;
     --font-jumbo: 3.8rem;
+    --font-xxlarge: 3.2rem;
     --font-xlarge: 3rem;
     --font-large: 2.4rem;
     --font-medium-20: 2rem;

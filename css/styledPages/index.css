@@ -2,8 +2,8 @@
 @import url(../others/cards.css);
 
 
-/* Estilos propios de index.html */
-/* -----------------------------------  HERO -------------------------------- */
+/* --- Estilos propios de index.html --- */
+/* ---  HERO --- */
 .hero {
     background-image: url(../../img/funkos-banner.webp);
     background-size: cover;
@@ -63,10 +63,10 @@
     color: var(--font-light-solid);
 }
 
-/* ------------------------------- MAIN ------------------------------------- */
+/* --- MAIN --- */
 
 .main-container {
-    padding: var(--spacing-68) var(--spacing-128);
+    padding: var(--spacing-68) var(--spacing-100);
 }
 
 /* --- COLLECTION --- */
@@ -124,7 +124,7 @@
 
 /* .collection__cover {} */
 
-/* --- SLIDER -- */
+/* --- SLIDER --- */
 
 .slider {
     display: flex;
