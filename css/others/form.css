@@ -75,7 +75,7 @@
 
 /* --- <textarea> --- */
 .form__textarea {
-    flex: 1;
+    /* flex: 1; */
     border: 2px solid var(--bg-dark-solid);
     border-radius: 4px;
     padding: var(--spacing-12);
@@ -162,7 +162,7 @@
     background-color: var(--dark-500);
     transition: var(--transition-links);
     font-family: var(--font-base);
-    font-size: var(--font-xxsmall);
+    font-size: var(--font-xsmall);
     color: var(--font-light-solid);
     font-weight: 400;
 }

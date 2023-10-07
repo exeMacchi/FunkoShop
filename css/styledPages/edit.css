@@ -1,7 +1,7 @@
 @import url(../global.css);
 @import url(../others/form.css);
 
-/* --- Estilos propios de create.html --- */
+/* --- Estilos propios de edit.html --- */
 /* --- MAIN --- */
 .main-container {
     padding: var(--spacing-36) var(--spacing-100);
@@ -9,14 +9,14 @@
     align-items: center;
 }
 
-.create__content {
+.edit__content {
     width: 1200px;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
 }
 
-.create__title {
+.edit__title {
     font-family: var(--font-alternative);
     font-size: var(--font-xjumbo);
     font-weight: 700;
@@ -24,37 +24,50 @@
 
 /* --- FORM --- */
 /* Contenedor de contenido por fila del formulario */
-.create-form__content {
+.edit-form__content {
     display: flex;
     gap: var(--spacing-48);
 }
 
 /* Separador entre etiqueta y elemento de formulario */
-.create-form__input {
+.edit-form__input {
     display: flex;
     align-items: center;
     gap: var(--spacing-12);
 }
 
-/* Separador entre elementos buttons del formulario */
-.create-form__input--buttons {
+/* Estilos de las imágenes del producto */
+.edit-form__figure--content {
     display: flex;
     align-items: center;
-    gap: var(--spacing-36);
+    gap: var(--spacing-24);
 }
 
+.edit-form__figure {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    max-width: 170px;
+}
+
+.edit-form__figcaption {
+    font-family: var(--font-alternative);
+    font-size: var(--font-medium-20);
+    font-weight: 500;
+    text-align: center;
+    padding-top: var(--spacing-8);
+    border-top: 2px solid var(--primary-solid);
+}
+
+
 /* Estilos únicos del formulario de esta página */
-.create-form__stock,
-.create-form__discount {
+.edit-form__stock,
+.edit-form__discount {
     text-align: center;
     width: var(--spacing-36);
 }
 
-.create-form__sku,
-.create-form__price {
+.edit-form__sku,
+.edit-form__price {
     width: var(--spacing-128);
-}
-
-.create-form__button {
-    padding: var(--spacing-12) var(--spacing-48);
 }
