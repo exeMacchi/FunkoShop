@@ -1,42 +1,161 @@
-/* <form> */
+/* --- <form> --- */
 .form__container {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
 }
 
-/* <label> */
+/* --- <label> --- */
 .form__label {
     font-size: var(--font-large);
     font-weight: 400;
 }
 
 .form__label--terms {
+    display: flex;
+    align-items: center;
     font-size: var(--font-medium);
     font-weight: 400;
 }
 
+.form__label--terms > input {
+    margin-right: var(--spacing-8);
+}
+
 .form__label--terms > a {
+    margin-left: 4px;
     color: var(--secondary-solid);
 }
 
-/* <input type="text"> | <input type"email"> | <input type="password"> */
+.form__label--terms > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* --- <input type="text", "email", "password", "number"> --- */
 .form__text,
 .form__email,
-.form__password {
+.form__password,
+.form__number {
     border: none;
-    border-bottom: 2px solid var(--primary-solid);
-    font-size: var(--font-small);
+    border-bottom: 2px solid var(--bg-dark-solid);
+    font-size: var(--font-medium);
     font-weight: 400;
+    caret-color: var(--primary-solid);
 }
 
 .form__text::placeholder,
 .form__email::placeholder,
-.form__password::placeholder {
+.form__password::placeholder,
+.form__number::placeholder {
     color: var(--font-light-placeholder);
 }
 
-/* <button> */
+.form__text:focus,
+.form__email:focus,
+.form__password:focus,
+.form__number:focus {
+    outline: none;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+/* --- <input type="checkbox"> --- */
+.form__checkbox {
+    appearance: none;
+    border: 2px solid black;
+    border-radius: 3px;
+    height: 15px;
+    width: 15px;
+}
+
+.form__checkbox:checked {
+    background-color: var(--primary-900);
+}
+
+
+/* --- <textarea> --- */
+.form__textarea {
+    flex: 1;
+    border: 2px solid var(--bg-dark-solid);
+    border-radius: 4px;
+    padding: var(--spacing-12);
+    font-family: var(--font-base);
+    font-size: var(--font-medium);
+    font-weight: 400;
+    caret-color: var(--primary-solid);
+}
+
+.form__textarea::placeholder {
+    color: var(--font-light-placeholder);
+}
+
+.form__textarea:focus {
+    border: 2px solid var(--primary-solid);
+    outline: none;
+}
+
+/* --- <select> --- */
+/* Contenedor necesario para poner el ícono de caret down al <select> */
+.form__select--content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilos del <select> */
+.form__select {
+    appearance: none;
+    border: 2px solid var(--bg-dark-solid);
+    border-radius: 6px;
+    padding: var(--spacing-8) var(--spacing-100) var(--spacing-8) var(--spacing-8) ;
+
+    font-size: var(--font-medium-20);
+    font-weight: 500;
+}
+
+.form__select:hover {
+    cursor: pointer;
+}
+
+.form__select:focus {
+    border: 2px solid var(--primary-solid);
+    outline: none;
+}
+
+.form__select:required:invalid {
+    color: var(--font-light-placeholder);
+}
+
+/* Estilos del ícono */
+.form__select--icon-down,
+.form__select--icon-up {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    font-size: var(--font-large);
+    margin-right: var(--spacing-12);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.form__select--icon-up {
+    display: none;
+}
+
+
+/* Estilos de las opciones */
+.form__option {
+    color: var(--bg-dark-solid);
+}
+
+
+.form__option--placeholder {
+    display: none;
+}
+
+
+/* --- <button> --- */
 .form__button {
     border: none;
     padding: var(--spacing-12) var(--spacing-24);
@@ -51,4 +170,10 @@
 .form__button:hover {
     background-color: var(--primary-solid);
     cursor: pointer;
+}
+
+/* --- <input type="file"> */
+.form__file:focus {
+    outline: none;
+    border: 2px solid var(--primary-solid);
 }

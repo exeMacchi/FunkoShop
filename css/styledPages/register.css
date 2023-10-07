@@ -9,13 +9,13 @@
     align-items: center;
 }
 
-/* --- FORM --- */
 .register__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--spacing-36);
 }
+
 
 .register__title {
     font-family: var(--font-alternative);
@@ -24,6 +24,7 @@
     text-align: center;
 }
 
+/* --- FORM --- */
 .register__text {
     font-family: var(--font-alternative);
     font-size: var(--font-xxlarge);

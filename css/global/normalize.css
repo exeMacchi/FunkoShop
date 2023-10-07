@@ -12,7 +12,7 @@ html {
     color: var(--dark-solid);
 }
 
-/* Con esto evito que haya contenido vacío cuando se achica el zoom del navegador*/
+/* Con esto se evita que haya contenido vacío cuando se achica el zoom del navegador */
 body {
     display: flex;
     flex-direction: column;
