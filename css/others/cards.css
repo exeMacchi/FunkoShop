@@ -45,27 +45,26 @@
     gap: var(--spacing-16);
     padding: var(--spacing-16);
 }
-.card_item__license {
+.card-item__license {
     font-size: var(--font-xsmall);
-    font-weight: var(--font-weight-500);
+    font-weight: 500;
 }
 
 .card-item__name {
     font-size: var(--font-medium);
-    font-weight: var(--font-weight-700);
+    font-weight: 700;
 }
 
 .card-item__price {
     font-size: var(--font-small);
-    font-weight: var(--font-weight-400);
+    font-weight: 400;
 }
 
 .card-item__promo {
     font-size: var(--font-xxsmall);
-    font-weight: var(--font-weight-700);
+    font-weight: 700;
     color: var(--secondary-solid);
 }
-
 
 /* ANIMACIONES */ 
 

@@ -50,7 +50,7 @@
 .hero__link {
     display: inline-block;
     font-size: var(--font-medium-20);
-    font-weight: var(--font-weight-500);
+    font-weight: 500;
     background-color: var(--bg-light-solid);
     padding: var(--spacing-12) var(--spacing-68);
     border-radius: 50px;
@@ -90,13 +90,13 @@
 .collection__title {
     font-family: var(--font-alternative);
     font-size: var(--font-display);
-    font-weight: var(--font-weight-500);
+    font-weight: 500;
 }
 
 .collection__text {
     font-family: var(--font-alternative);
     font-size: var(--font-large);
-    font-weight: var(--font-weight-400);
+    font-weight: 400;
     color: var(--bg-dark-solid);
 }
 
@@ -109,7 +109,7 @@
 .collection__link {
     display: inline-block;
     font-size: var(--font-large);
-    font-weight: var(--font-weight-400);
+    font-weight: 400;
     background-color: var(--bg-dark-solid);
     color: var(--font-light-solid);
     padding: var(--spacing-16) var(--spacing-48);
@@ -135,7 +135,7 @@
 .slider__title {
     font-family: var(--font-alternative);
     font-size: var(--font-display);
-    font-weight: var(--font-weight-700);
+    font-weight: 700;
 }
 
 .slider__items {
