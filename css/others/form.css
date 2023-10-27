@@ -5,6 +5,7 @@
     gap: var(--spacing-36);
 }
 
+
 /* --- <label> --- */
 .form__label {
     font-size: var(--font-large);
@@ -31,6 +32,7 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
 
 /* --- <input type="text", "email", "password", "number"> --- */
 .form__text,
@@ -59,6 +61,13 @@
     border-bottom: 2px solid var(--primary-solid);
 }
 
+.form__number::-webkit-outer-spin-button,
+.form__number::-webkit-inner-spin-button {
+    margin: 0;
+    appearance: none;
+}
+
+
 /* --- <input type="checkbox"> --- */
 .form__checkbox {
     appearance: none;
@@ -75,7 +84,6 @@
 
 /* --- <textarea> --- */
 .form__textarea {
-    /* flex: 1; */
     border: 2px solid var(--bg-dark-solid);
     border-radius: 4px;
     padding: var(--spacing-12);
@@ -93,6 +101,7 @@
     border: 2px solid var(--primary-solid);
     outline: none;
 }
+
 
 /* --- <select> --- */
 /* Contenedor necesario para poner el ícono de caret down al <select> */
@@ -143,12 +152,10 @@
     display: none;
 }
 
-
 /* Estilos de las opciones */
 .form__option {
     color: var(--bg-dark-solid);
 }
-
 
 .form__option--placeholder {
     display: none;
@@ -171,6 +178,7 @@
     background-color: var(--primary-solid);
     cursor: pointer;
 }
+
 
 /* --- <input type="file"> */
 .form__file:focus {
