@@ -29,6 +29,7 @@
     display: none;
 }
 
+/* Tag: NUEVO */
 .card-item__tag {
     background-color: var(--primary-solid);
     color: var(--font-light-solid);

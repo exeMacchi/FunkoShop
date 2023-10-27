@@ -1,4 +1,5 @@
-@import url(../others/cards.css);
+@import url(../components/cards.css);
+@import url(../components/slider_glider.css);
 
 /* --- Estilos propios de index.html --- */
 /* ---  HERO --- */
@@ -121,31 +122,3 @@
 }
 
 /* .collection__cover {} */
-
-/* --- SLIDER --- */
-
-.slider {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-48);
-}
-
-.slider__title {
-    font-family: var(--font-alternative);
-    font-size: var(--font-display);
-    font-weight: 700;
-}
-
-.slider__items {
-    display: flex;
-    gap: var(--spacing-68);
-}
-
-.slider__item {
-    transition: transform 0.5s ease;
-}
-
-.slider__item:hover {
-    transform: scale(105%);
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
-}

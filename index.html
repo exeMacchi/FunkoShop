@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Ícono para la pestaña -->
         <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
+        <!-- Slider/Glider -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
         <!-- Estilos de la página -->
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/styledPages/index.css">
@@ -125,81 +128,87 @@
             </section>
 
             <!-- SLIDER: ÚLTIMOS LANZAMIENTOS -->
-            <section class="slider container"> 
+            <section class="slider container glide"> 
                 <h2 class="slider__title">ÚLTIMOS LANZAMIENTOS</h2>
-                <ul class="slider__items">
-                    <li class="slider__item">
-                        <!-- ART 4 -->
-                        <article class="card-item"> 
-                            <a class="card-item__link" href="#">
-                                <figure class="card-item__cover">
-                                    <span class="card-item__tag">NUEVO</span>
-                                    <img src="/img/star-wars/trooper-1.webp" 
-                                         alt="Funkopop de un soldado imperial de Star Wars"
-                                         class="card-item__img--front">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="slider__item glide__slide">
+                            <!-- ART 4 -->
+                            <article class="card-item"> 
+                                <a class="card-item__link" href="#">
+                                    <figure class="card-item__cover">
+                                        <span class="card-item__tag">NUEVO</span>
+                                        <img src="/img/star-wars/trooper-1.webp" 
+                                            alt="Funkopop de un soldado imperial de Star Wars"
+                                            class="card-item__img--front">
 
-                                    <img src="/img/star-wars/trooper-box.webp" 
-                                         alt="Funkopop de un soldado imperial de Star Wars dentro de su caja"
-                                         class="card-item__img--back">
-                                </figure>
-                                <div class="card-item__content">
-                                    <p class="card-item__license">STAR WARS</p>
-                                    <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
-                                    <p class="card-item__price">$ 1799,99</p>
-                                    <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
+                                        <img src="/img/star-wars/trooper-box.webp" 
+                                            alt="Funkopop de un soldado imperial de Star Wars dentro de su caja"
+                                            class="card-item__img--back">
+                                    </figure>
+                                    <div class="card-item__content">
+                                        <p class="card-item__license">STAR WARS</p>
+                                        <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                                        <p class="card-item__price">$ 1799,99</p>
+                                        <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
 
-                    <li class="slider__item">
-                        <!-- ART 5 -->
-                        <article class="card-item"> 
-                            <a class="card-item__link" href="#">
-                                <figure class="card-item__cover">
-                                    <span class="card-item__tag">NUEVO</span>
-                                    <img src="/img/pokemon/pidgeotto-1.webp" 
-                                         alt="Funkopop de Pidgeotto de Pokemon"
-                                         class="card-item__img--front">
+                        <li class="slider__item glide__slide">
+                            <!-- ART 5 -->
+                            <article class="card-item"> 
+                                <a class="card-item__link" href="#">
+                                    <figure class="card-item__cover">
+                                        <span class="card-item__tag">NUEVO</span>
+                                        <img src="/img/pokemon/pidgeotto-1.webp" 
+                                            alt="Funkopop de Pidgeotto de Pokemon"
+                                            class="card-item__img--front">
 
-                                    <img src="/img/pokemon/pidgeotto-box.webp" 
-                                         alt="Funkopop de Pidgeotto de Pokemon dentro de su caja"
-                                         class="card-item__img--back">
-                                </figure>
-                                <div class="card-item__content">
-                                    <p class="card-item__license">POKEMON</p>
-                                    <h4 class="card-item__name">PIDGEOTTO</h4>
-                                    <p class="card-item__price">$ 1799,99</p>
-                                    <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
+                                        <img src="/img/pokemon/pidgeotto-box.webp" 
+                                            alt="Funkopop de Pidgeotto de Pokemon dentro de su caja"
+                                            class="card-item__img--back">
+                                    </figure>
+                                    <div class="card-item__content">
+                                        <p class="card-item__license">POKEMON</p>
+                                        <h4 class="card-item__name">PIDGEOTTO</h4>
+                                        <p class="card-item__price">$ 1799,99</p>
+                                        <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
 
-                    <li class="slider__item">
-                        <!-- ART 6 -->
-                        <article class="card-item"> 
-                            <a class="card-item__link" href="#">
-                                <figure class="card-item__cover">
-                                    <span class="card-item__tag">NUEVO</span>
-                                    <img src="/img/harry-potter/luna-1.webp" 
-                                         alt="Funkopop de Luna Lovegood de Harry Potter"
-                                         class="card-item__img--front">
+                        <li class="slider__item glide__slide">
+                            <!-- ART 6 -->
+                            <article class="card-item"> 
+                                <a class="card-item__link" href="#">
+                                    <figure class="card-item__cover">
+                                        <span class="card-item__tag">NUEVO</span>
+                                        <img src="/img/harry-potter/luna-1.webp" 
+                                            alt="Funkopop de Luna Lovegood de Harry Potter"
+                                            class="card-item__img--front">
 
-                                    <img src="/img/harry-potter/luna-box.webp"
-                                         alt="Funkopop de Luna Lovegood de Harry Potter dentro de su caja"
-                                         class="card-item__img--back">
-                                </figure>
-                                <div class="card-item__content">
-                                    <p class="card-item__license">HARRY POTTER</p>
-                                    <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
-                                    <p class="card-item__price">$ 1799,99</p>
-                                    <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                </ul>
+                                        <img src="/img/harry-potter/luna-box.webp"
+                                            alt="Funkopop de Luna Lovegood de Harry Potter dentro de su caja"
+                                            class="card-item__img--back">
+                                    </figure>
+                                    <div class="card-item__content">
+                                        <p class="card-item__license">HARRY POTTER</p>
+                                        <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                                        <p class="card-item__price">$ 1799,99</p>
+                                        <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="ic:sharp-chevron-left"></iconify-icon></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="ic:sharp-chevron-right"></iconify-icon></button>
+                </div>
             </section>
         </main>
 
@@ -232,6 +241,10 @@
         </footer>
     
         <!-- SCRIPTS -->
+        <!-- Íconos -->
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <!-- Slider/Glider -->
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script src="/js/glider.js"></script>
     </body>
 </html>
