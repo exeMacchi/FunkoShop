@@ -1,13 +1,8 @@
 @import url(../components/form.css);
 
 /* --- Estilos propios de edit.html --- */
-/* --- MAIN --- */
-.main-container {
-    padding: var(--spacing-36) var(--spacing-100);
-    display: flex;
-    align-items: center;
-}
 
+/* --- MAIN --- */
 .edit__content {
     width: 1200px;
     display: flex;

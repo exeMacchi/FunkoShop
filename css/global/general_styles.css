@@ -1,3 +1,12 @@
+/* Los contenedores principales */
+.main-container {
+    padding: var(--spacing-36) var(--spacing-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Los contenedores de todas las páginas tienen un ancho máximo de 1200px */
 .container {
     max-width: 1200px;

@@ -21,7 +21,7 @@
 }
 
 /* Chevron */
-iconify-icon {
+button > iconify-icon {
     color: var(--bg-dark-solid);
     font-size: var(--font-xlarge);
     font-weight: 700;
