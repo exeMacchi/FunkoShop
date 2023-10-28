@@ -26,6 +26,7 @@
 
                 <!-- INICIO MENU -->
                 <ul class="navbar__menu--shop">
+                    <!-- Shop -->
                     <li class="navbar__item with-submenu">
                         <a class="navbar__link with-icon" 
                            href="#">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
@@ -47,16 +48,19 @@
                         <!-- FIN SUBMENU -->
                     </li>
 
+                    <!-- Login -->
                     <li class="navbar__item">
                         <a class="navbar__link" 
                            href="/pages/admin/login.html">LOGIN</a>
                     </li>
 
+                    <!-- Contacto -->
                     <li class="navbar__item">
                         <a class="navbar__link"
                            href="/pages/contact.html">CONTACTO</a>
                     </li>
 
+                    <!-- Carrito -->
                     <li class="navbar__item">
                         <a class="navbar__cart"
                            href="/pages/shop/cart.html">
@@ -64,9 +68,43 @@
                                  alt="Carrito de compras">
                         </a>
                     </li>
+
+                    <!-- Menu Bar -->
+                    <!-- El mod --bar evita que se oculte con responsive -->
+                    <li class="navbar__item--bar">
+                        <iconify-icon class="navbar__bar" icon="ci:hamburger-lg"></iconify-icon>
+                    </li>
                 </ul>
                 <!-- FIN MENU -->
             </nav>
+
+            <!-- INICIO DROPDOWN -->
+            <div class="dropdown-menu container">
+                <!-- Shop -->
+                <div class="dropdown-menu__item with-submenu">
+                    <a class="navbar__link" 
+                        href="#">SHOP</a>
+                </div>
+
+                <!-- Login -->
+                <div class="dropdown-menu__item">
+                    <a class="navbar__link" 
+                    href="/pages/admin/login.html">LOGIN</a>
+                </div>
+
+                <!-- Contacto -->
+                <div class="dropdown-menu__item">
+                    <a class="navbar__link"
+                    href="/pages/contact.html">CONTACTO</a>
+                </div>
+
+                <!-- Carrito -->
+                <div class="dropdown-menu__item">
+                    <a class="navbar__link"
+                    href="/pages/shop/cart.html">CARRITO</a>
+                </div>
+            </div>
+            <!-- FIN DROPDOWN -->
         </header> 
 
         <!-- HERO-->
@@ -243,6 +281,10 @@
         <!-- SCRIPTS -->
         <!-- Íconos -->
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+        <!-- Dropdown menu -->
+        <script src="/js/dropdown_menu.js"></script>
+
         <!-- Slider/Glider -->
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
         <script src="/js/glider.js"></script>

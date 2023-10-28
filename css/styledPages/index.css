@@ -1,5 +1,5 @@
 @import url(../components/cards.css);
-@import url(../components/slider_glider.css);
+@import url(../components/glider.css);
 
 /* --- Estilos propios de index.html --- */
 /* ---  HERO --- */
@@ -65,6 +65,7 @@
 /* --- MAIN --- */
 .main-container {
     padding: var(--spacing-68) var(--spacing-100);
+    gap: var(--spacing-16)
 }
 
 /* --- COLLECTION --- */
@@ -121,3 +122,74 @@
 }
 
 /* .collection__cover {} */
+
+/* --- SLIDER --- */
+.slider {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-48);
+    margin-top: var(--spacing-36);
+}
+
+.slider__title {
+    font-family: var(--font-alternative);
+    font-size: var(--font-display);
+    font-weight: 700;
+}
+
+.slider__item {
+    transition: transform 0.5s ease;
+}
+
+.slider__item:hover {
+    transform: scale(95%);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* --- BREAKPOINTS --- */
+/* TABLETS */
+@media screen and (max-width: 976px) {
+    /* HERO */
+    .hero__content {
+        align-items: center;
+    }
+
+    /* COLLECTION */
+    .collection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .collection__cover {
+        order: -1;
+    }
+
+    .collection__link {
+        align-self: center;
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 535px) {
+    /* HERO */
+    .hero {
+        padding: var(--spacing-48) var(--spacing-36);
+    }
+
+    /* MAIN */
+    .main-container {
+        padding: var(--spacing-68) var(--spacing-8);
+    }
+
+    /* COLLECTION */
+    .collection__title {
+        font-size: var(--font-xxlarge);
+        align-self: center;
+    }
+
+    /* SLIDER */
+    .slider__title {
+        text-align: center;
+        font-size: var(--font-xxlarge);
+    }
+}

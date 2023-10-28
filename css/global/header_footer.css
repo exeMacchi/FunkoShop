@@ -40,6 +40,7 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: var(--spacing-36);
+    padding-left: var(--spacing-36);
 }
 
 /* Submenú para las páginas shop */
@@ -89,6 +90,23 @@ header {
 
 /* .navbar__cart {} */
 
+.navbar__bar {
+    display: none;
+    font-size: var(--font-jumbo);
+    cursor: pointer;
+}
+
+/* --- DROPDOWN MENU RESPONSIVE --- */
+.dropdown-menu {
+    display: none;
+    background-color: var(--bg-dark-solid);
+    padding-top: var(--spacing-16);
+}
+
+.dropdown-menu__item {
+    text-align: center;
+}
+
 /* --- FOOTER -- */
 footer {
     padding: var(--spacing-100) var(--spacing-100) var(--spacing-16) var(--spacing-100);
@@ -100,4 +118,49 @@ footer {
     font-weight: 400;
     text-align: center;
     margin-top: var(--spacing-36);
+}
+
+/* --- BREAKPOINTS --- */
+@media screen and (min-width: 1150px) {
+    /* Con esto el dropdown se oculta si está abierto y se agranda el viewport */
+    .dropdown-menu {
+        display: none !important;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 1150px) {
+    /* HEADER */
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+    }
+
+    /* DROPDOWN */
+    .navbar__bar {
+        display: block;
+    }
+    .navbar__item {
+        display: none;
+    }
+}
+
+
+/* Celulares */
+@media screen and (max-width: 535px) {
+    /* HEADER */
+    header {
+        padding: var(--spacing-8) var(--spacing-8);
+    }
+    .navbar__menu--shop {
+        padding-left: 0;
+    }
+
+    /* FOOTER */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-16);
+    }
 }

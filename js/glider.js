@@ -5,7 +5,7 @@ new Glide(".glide", {
 	gap: 60,
 	breakpoints: {
 		// Tablets
-		991: {
+		1150: {
 			perView: 2
 		},
 		// Celulares
