@@ -2,9 +2,10 @@
 export default function dropdownMenu() {
     const bar = document.querySelector(".navbar__bar");
     const dropdown = document.querySelector(".dropdown-menu");
+    const none = getComputedStyle(dropdown);
 
     bar.addEventListener("click", () => {
-        if (dropdown.style.display === "none") {
+        if (none.display === "none") {
             dropdown.style.display = "block";
         }
         else {

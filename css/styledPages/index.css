@@ -100,6 +100,7 @@
 }
 
 .collection__line {
+    background-color: var(--primary-solid);
     border: 2px solid var(--primary-solid);
     align-self: stretch;
     margin-top: var(--spacing-16);
