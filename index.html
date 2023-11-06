@@ -20,7 +20,12 @@
                 <figure class="navbar__logo--header">
                     <a href="./index.html">
                         <img src="img/branding/logo_light_horizontal.svg" 
-                             alt="Isotipo de la tienda FunkoShop">
+                             alt="Isotipo de la tienda FunkoShop"
+                             class="navbar__logo">
+                        
+                        <img src="/img/branding/isotype.svg"
+                             alt="Isotipo de la tienda FunkoShop"
+                             class="navbar__logo--response">
                     </a>
                 </figure>
 
@@ -253,7 +258,7 @@
         <!-- FOOTER -->
         <footer> 
             <nav class="navbar container">
-                <ul>
+                <ul class="navbar--footer">
                     <li>
                         <a class="navbar__link" 
                            href="../shop/shop.html">SHOP</a>
@@ -269,9 +274,14 @@
                 </ul>
 
                 <figure class="navbar__logo--footer">
-                    <a href="../../index.html">
-                        <img src="../../img/branding/isotype.svg" 
-                             alt="Isotipo de la tienda Funkoshop">
+                    <a href="./index.html">
+                        <img src="/img/branding/isotype.svg" 
+                             alt="Isotipo de la tienda Funkoshop"
+                             class="navbar__logo">
+
+                        <img src="/img/branding/logo_light_horizontal.svg"
+                             alt="Isotipo de la tienda FunkoShop"
+                             class="navbar__logo--response">
                     </a>
                 </figure>
             </nav>
@@ -282,11 +292,17 @@
         <!-- Íconos -->
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-        <!-- Dropdown menu -->
-        <script src="/js/dropdown_menu.js"></script>
-
         <!-- Slider/Glider -->
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
         <script src="/js/glider.js"></script>
+
+        <!-- Otros -->
+        <script type="module">
+            import dropdownMenu from "/js/dropdown_menu.js"
+
+            window.onload = () => {
+                dropdownMenu();
+            }
+        </script>
     </body>
 </html>

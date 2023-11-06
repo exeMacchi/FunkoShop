@@ -296,7 +296,14 @@
         <!-- SCRIPTS -->
         <!-- Íconos -->
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-        <!-- Select caret -->
-        <script src="/js/select_caret.js"></script>
+
+        <!-- Otros -->
+        <script type="module">
+            import selectCaret from "/js/select_caret.js";
+
+            window.onload = () => {
+                selectCaret();
+            }
+        </script>
     </body>
 </html>

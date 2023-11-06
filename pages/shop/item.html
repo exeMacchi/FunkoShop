@@ -228,9 +228,18 @@
         <!-- SCRIPTS -->
         <!-- Íconos -->
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
         <!-- Slider/Glider -->
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
         <script src="/js/glider.js"></script>
-        <script src="/js/item_quantity.js"></script>
+
+        <!-- Otros -->
+        <script type="module">
+            import itemQuantity from "/js/item_quantity.js";
+
+            window.onload = () => {
+                itemQuantity();
+            }
+        </script>
     </body>
 </html>

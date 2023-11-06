@@ -26,6 +26,11 @@ header {
     max-width: 140px;
 }
 
+/* Logo para responsive de celulares */
+.navbar__logo--response {
+    display: none;
+}
+
 /* Menú para las páginas admin */
 .navbar__menu--admin {
     display: flex;
@@ -144,23 +149,53 @@ footer {
     .navbar__item {
         display: none;
     }
+
+    /* FOOTER */
+    footer {
+        padding: var(--spacing-36) var(--spacing-48);
+    }
 }
 
-
 /* Celulares */
-@media screen and (max-width: 535px) {
-    /* HEADER */
-    header {
-        padding: var(--spacing-8) var(--spacing-8);
+@media screen and (max-width: 650px) {
+    /* Activar el logo responsive */
+    .navbar__logo {
+        display: none;
     }
-    .navbar__menu--shop {
-        padding-left: 0;
+    .navbar__logo--response {
+        display: inline-block;
+    }
+
+    /* HEADER */ 
+    header {
+        padding: var(--spacing-16) var(--spacing-36);
+    }
+
+    header .navbar__logo--response {
+        max-width: 100px;
     }
 
     /* FOOTER */
-    .navbar {
+    footer .navbar {
         flex-direction: column;
         align-items: center;
         gap: var(--spacing-16);
+        position: relative;
+    }
+
+    .navbar--footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .navbar__logo--response {
+        /* max-width: 200px; */
+        position: absolute;
+        left: 0;
+    }
+
+    .footer__copy {
+        margin-top: var(--spacing-100);
     }
 }

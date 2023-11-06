@@ -1,5 +1,5 @@
 // Aumentar o disminuir la cantidad de un input
-window.onload = function() {
+export default function itemQuantity() {
     const input = document.querySelector("#item-quantity");
     const plusButton = document.querySelector("#plus-button");
     const minusButton = document.querySelector("#minus-button");
@@ -12,5 +12,5 @@ window.onload = function() {
         if (input.value > 0) {
             input.value -= 1;
         }
-    })
+    });
 }
