@@ -8,7 +8,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: top;
-    padding: var(--spacing-128);
+    padding: var(--spacing-100);
 
     position: relative;
 }
@@ -124,30 +124,9 @@
 
 /* .collection__cover {} */
 
-/* --- SLIDER --- */
-.slider {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-48);
-    margin-top: var(--spacing-36);
-}
-
-.slider__title {
-    font-family: var(--font-alternative);
-    font-size: var(--font-display);
-    font-weight: 700;
-}
-
-.slider__item {
-    transition: transform 0.5s ease;
-}
-
-.slider__item:hover {
-    transform: scale(95%);
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
-}
 
 /* --- BREAKPOINTS --- */
+
 /* TABLETS */
 @media screen and (max-width: 976px) {
     /* HERO */
